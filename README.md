@@ -1,20 +1,18 @@
-# Seminario
-Siglo21
+## Getting Started
 
-Integrante:
-Pérez Martin, Santiago (VINF010750)
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-Institución:
-Universidad Siglo 21
+## Folder Structure
 
-Trabajo Practico N° 1
+The workspace contains two folders by default, where:
 
-Materia:
-Seminario de Practica Informática
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
 
-Docente:
-Pablo Alejandro Virgolini
-Hugo Fernando Frías
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-Fecha:
-15/09/2024
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
+## Dependency Management
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
