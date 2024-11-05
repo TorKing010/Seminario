@@ -1,0 +1,37 @@
+CREATE TABLE Producto (
+    id_producto INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    codigo VARCHAR(50),
+    cantidad INT,
+    umbral_minimo INT
+);
+
+CREATE TABLE Pedido (
+    id_pedido INT AUTO_INCREMENT PRIMARY KEY,
+    numero_pedido VARCHAR(50),
+    fecha DATE,
+    estado VARCHAR(20),
+    id_producto INT,
+    FOREIGN KEY (id_producto) REFERENCES Producto(id_producto)
+);
+
+CREATE TABLE Proveedor (
+    id_proveedor INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    direccion VARCHAR(100)
+);
+
+CREATE TABLE Usuario (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    email VARCHAR(50),
+    password VARCHAR(20)
+);
+
+CREATE TABLE Pedido_Proveedor (
+    id_pedido INT,
+    id_proveedor INT,
+    PRIMARY KEY (id_pedido, id_proveedor),
+    FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido),
+    FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor)
+);
